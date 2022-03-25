@@ -1,0 +1,91 @@
+.headline_nav {
+  display: flex;
+  /* position: relative; */
+  flex: 1;
+  background-color: hsl(251, 21%, 10%);
+  height: 40px;
+  font-size: 14px;
+  z-index: 1;
+  color: aliceblue;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  /* justify-content: space-between; */
+}
+
+.headline_navShop {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.headline_menu {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  font-weight: 500;
+  padding: 0px 10px;
+  /* border: 1px solid lightgray; */
+  /* padding: 10px 5px; */
+  /* display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 10px; */
+}
+
+.headline_menu:hover {
+  border: 1px solid lightgray;
+}
+
+.headline_option {
+  /* margin-right: 15px; */
+  /* display: flex;
+  font-weight: 500;
+  padding: 0 10px; */
+  font-weight: 500;
+  padding: 0px 10px;
+  /* background-color: blue; */
+}
+
+.headline_option:hover {
+  border: 1px solid lightgray;
+}
+
+.headline_prime {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 0px 10px;
+  /* background-color: blue; */
+  /* display: flex;
+  align-items: center;
+  
+  padding: 0 10px;
+  font-weight: 500; */
+}
+
+.headline_prime:hover {
+  border: 1px solid lightgray;
+}
+
+.headline_detail {
+  /* position: absolute;
+  bottom: 0px; */
+  /* margin-left: 150px;
+  margin-right: 5px;
+  font-weight: 700; */
+  /* padding-left: 130px; */
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  padding: 0px 10px;
+
+  /* width: 50px; */
+  /* background-color: blue; */
+  /* margin-left: 30px; */
+  /* right: 0;
+  position: absolute; */
+}
+/* could just put hover on items in navshop to save code */
+.headline_detail:hover {
+  border: 1px solid lightgray;
+}
