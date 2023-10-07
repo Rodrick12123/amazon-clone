@@ -16,7 +16,7 @@ export default function Savings() {
                 alt=''
             />
             <p className='savings_gift'>
-            $60 instant gift card
+            $65 instant gift card
             </p>
         </div>
         <div className='savings_promo'>

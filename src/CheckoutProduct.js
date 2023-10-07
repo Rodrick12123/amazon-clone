@@ -4,7 +4,7 @@ import './CheckoutProduct.css';
 import { useStateValue } from './StateProvider';
 // import Subtotal from './Subtotal';
 
-function CheckoutProduct({id, image, title, price, rating, checked,}) {
+function CheckoutProduct({id, image, title, price, rating, checked, box}) {
     const [{ tempCart }, dispatch] = useStateValue();
     // console.log("temp:", tempCart)
     const [{ cart }] = useStateValue();
@@ -92,12 +92,20 @@ function CheckoutProduct({id, image, title, price, rating, checked,}) {
   return (
     <div className='checkoutProduct'>
         <div className='checkout_boxImg'>
-            <input className='checkout_checkbox' type="checkbox" defaultChecked= {true} 
+            {box == true && 
+                <input className='checkout_checkbox' type="checkbox" defaultChecked= {true} 
                 onClick= {(e) => {
                     selectInCart(e);
                 }} 
-            />
-            <img className='checkoutP_image' src= {image } alt=''/>
+                />
+            }
+
+            {/* <input className='checkout_checkbox' type="checkbox" defaultChecked= {true} 
+                onClick= {(e) => {
+                    selectInCart(e);
+                }} 
+            /> */}
+            <img className='checkoutP_image'  src= {image } alt=''/>
         </div>
         
         

@@ -10,7 +10,15 @@ import LoginPassword from "./LoginPassword";
 import Register from "./Register";
 import {auth} from './firebase';
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
+import Method from "./Method";
+import Order from "./Order";
+import {loadStripe} from "@stripe/stripe-js";
+import {Elements} from "@stripe/react-stripe-js";
 
+const promise = loadStripe(
+  "pk_test_51KjVuKHWQld6JE3RJLhBrKXIeOJs6Dpk2RvxYexiYFha141BxBkdoghheRJ6ok1NSWQ0EqJqSH8TPExsSWcUW0hR00RxWDmAZV"
+);
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -32,6 +40,7 @@ function App() {
       }
     })
   }, [])
+
   return (
     // BEM
     <Router>
@@ -55,6 +64,14 @@ function App() {
               <Home/>
             </>}
         />
+        <Route path="/payment"
+          element={
+            <>
+              <Elements stripe= {promise}>
+                <Payment/>
+              </Elements>
+            </>}
+        />
         <Route path="/Login"
           element={
             <>
@@ -67,13 +84,26 @@ function App() {
             <LoginPassword/>
             </>}
         />
+        <Route path="/Order"
+          element={
+            <>
+            <Order/>
+            </>}
+        />
         <Route path="/Register"
           element={
             <>
             <Register/>
             </>}
         />
-
+        <Route path="/method"
+          element={
+            <>
+            <Elements stripe= {promise}>
+              <Method/>
+            </Elements>
+            </>}
+        />
 
       </Routes>
     </div>

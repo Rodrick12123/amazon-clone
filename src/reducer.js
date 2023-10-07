@@ -3,6 +3,7 @@ export const initialState = {
     products: [],
     tempCart: [],
     email: [],
+    address: [],
     user: null,
 }
 
@@ -19,6 +20,11 @@ export const getTempTotal = (tempCart) =>
 const reducer = (state, action) => {
     console.log("action",action)
     switch (action.type) {
+        case 'add_to_address':
+            return {
+                ...state,
+                address: [...state.address, action.item]
+            }
         case 'set_user':
             return {
                 ...state,

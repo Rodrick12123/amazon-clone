@@ -1,0 +1,38 @@
+.method {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom: 1px solid;
+  border-color: rgb(206, 206, 206);
+  padding: 25px 25px;
+  /* align-items: center; */
+}
+
+/* .method_info {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+} */
+
+.method_section {
+  /* height: 100px; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  background-color: #dadadb;
+  margin-bottom: 10px;
+}
+
+.method_section p {
+  font-weight: 600;
+}
+
+.method_section form {
+  max-width: 30%;
+}
+
+.method_details {
+  flex: 0.8;
+}
+
+

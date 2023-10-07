@@ -41,6 +41,7 @@ function Checkout() {
                             price = {item.price}
                             rating = {item.rating}
                             checked = {true}
+                            box = {true}
                             
                         />
                     ))}

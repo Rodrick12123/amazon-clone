@@ -1,0 +1,55 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.order p {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.subtotal_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtotal_info div {
+  display: flex;
+  padding: 2.5px 0px;
+  font-size: 13px;
+}
+
+.border_here,
+.order_price_b {
+  border-bottom: 1px solid grey;
+}
+
+.subtotal_info header {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.order_price,
+.order_price_b,
+.order_price_t {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.order_info {
+  margin: 5px 0px;
+}
+
+.order_total {
+  font-size: 18px;
+  color: rgb(195, 33, 33);
+}
+
+.order_price_t {
+  font-size: 17px;
+  color: rgb(195, 33, 33);
+}

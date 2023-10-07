@@ -12,6 +12,10 @@
   padding: 20px;
 }
 
+.subtotal > button:hover {
+  cursor: pointer;
+}
+
 .subtotal_info {
   font-size: 20px;
   font-weight: 450;

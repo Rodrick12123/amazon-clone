@@ -1,6 +1,4 @@
 .add_image {
-  /* Prob remove this */
-  /* display: flex; */
   width: 100%;
   /* margin-bottom: 15px; */
   height: max-content;
@@ -10,16 +8,9 @@
 .checkout {
   display: flex;
   padding: 10px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* align-items: center; */
-  /* put in indivi divs */
   background-color: rgb(236, 236, 236);
   height: max-content;
 
-  /* width: fit-content;
-  max-width: 100%; */
-  /* prob change h w mw */
 }
 
 .checkout_gift {
