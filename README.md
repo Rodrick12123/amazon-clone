@@ -4,7 +4,8 @@ Most of this websites functionality is accessible through the cart logo located 
 
 You can add items to the cart by clicking on the add to cart button below each product.
 
-
+**To View This Website**
+Go to this link: https://clone-311b0.web.app/
 
 
 
