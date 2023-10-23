@@ -8,5 +8,4 @@ You can add items to the cart by clicking on the add to cart button below each p
 Go to this link: https://clone-311b0.web.app/
 
 
-
-
+This project is inspired by the youtube channel clever programmer.
